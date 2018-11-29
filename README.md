@@ -74,3 +74,18 @@ On the software part, a lot of things can be added :
 -  For instance, we only have send information to the thing network (uplink). It would be great if we could control the leds for example sending information ot fro the arduino but directly fron the TTN (downlink) 
 - It could alo be a good idea if we can have a interface in order too see and control the data send by the sensor. To do so, I recommend to use nodered
 
+## FAQ
+
+
+## Authors
+Negatu Michael
+5th year student at Insa de Toulouse majoring in automatics and electronics
+Innovative Smart System
+
+## Acknowledgments
+Jean-Louis NOULLET for the design of the amplifier circuit
+Jérémie GRISOLIA and Benjamin MESTRE for the lecture in which we learned  a lot on Arduino.
+Arnauld BIGANZOLI for the KiCad lectures and initiation on Github
+Catherine CROUZET for the wielding of the shields
+
+
