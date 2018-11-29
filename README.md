@@ -10,10 +10,10 @@ code on Arduino UNO in order to send the information to the Lora network using T
 ### Prerequisites
 This is what you would need in order to do the project :
 •	Arduino Uno
-•	Lora chip
+•	Lora chip - RN2483_breakout
 •	LED
-•	Some resistances  and capacitors
-•	Gas sensor ( you can use the MQ2)
+•	Some resistances and capacitors
+•	Gas sensor ( you can use the MQ2) with the shield (T0-5)
 
 ### Installing
 You have to install Kicad for the hardware designing ( http://kicad-pcb.org/download/ )
