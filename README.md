@@ -31,7 +31,7 @@ On the top left, you have the gaz sesor that would o on a T05 case (http://fr.rs
 
 ![The Schematic](./pictures/GasSensor_schematic.PNG)
 
-                                          Fig 1 :The Schematic of the shield
+                                                 Fig 1 :The Schematic of the shield
 
 #### PCB
 Once the schematic is done, you could go on and start with the routing. Here are some tips in order to have a good PCB :
@@ -40,12 +40,13 @@ Once the schematic is done, you could go on and start with the routing. Here are
 - There is minimum width on the wiring depending on your footprints and your printing machine. In my design I had a track size of 20       mil, with 24 mil isolation.
 
  ![The PCB](./pictures/PCB.PNG)
-                                                 Fig 2 : 2-D view of the PCB
+                                                Fig 2 : 2-D view of the PCB 
 
+                                                 
 
 ![Front of the pcb in 3D view](./pictures/Front_pcb.PNG)
 
-                                                Fig 3 :3-D view of the PCB (front)
+                                                Fig 3 : 3-D view of the PCB (front)
 
 
 ![Back of the pcb in 3D view](./pictures/back_pcb.PNG)
@@ -54,4 +55,5 @@ Once the schematic is done, you could go on and start with the routing. Here are
 
 
 ### Setting up the ardiono and Lora Network
+
 
