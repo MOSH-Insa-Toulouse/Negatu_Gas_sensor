@@ -19,3 +19,10 @@ The main goal of the project is to design a shield for the Arduino. This shield 
 
 ![The Schematic](./pictures/GasSensor_schematic.PNG)
 
+![The PCB](./pictures/PCB.PNG)
+
+![Front of the pcb in 3D view](./pictures/Front_pcb.PNG)
+
+![Back of the pcb in 3D view](./pictures/back_pcb.PNG)
+
+
