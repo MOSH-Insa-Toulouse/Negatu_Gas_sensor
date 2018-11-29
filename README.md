@@ -56,4 +56,21 @@ Once the schematic is done, you could go on and start with the routing. Here are
 
 ### Setting up the ardiono and Lora Network
 
+In this part, I will talk about how you can send any data from the arduino to a Network using Lora. For this project we used the the thing network because it is easy to set up and to use (https://www.thethingsnetwork.org/)
+You can find the arduino code iside the Gas_sensor folder. This code has 2 objectives :
+- Receive data from the the Gas sensor and send it to the the thing network
+- Turn on the Led depending on the value of the gas sensor
+
+In order for the code to work youhave to follow the commentarygiven in the code. If you have some trouble with the lora network you cna check thethethinknetwork website in which everything is explained. (https://www.thethingsnetwork.org/docs/devices/uno/quick-start.html)
+
+## Improvements
+### Hardware
+
+It would been very intersting to measure the energy consumption of the arduino, the Lora chip and the gas Sensor. In case of a big consumption, we can modify the Arduino code in order to put the gas sensor and the Lora on sleep mode when they are not working. If this isn't enough we can implement a switch in order to disconnect the Gas sensor when we are not sending any information.
+
+### Software
+
+On the software part, a lot of things can be added :
+-  For instance, we only have send information to the thing network (uplink). It would be great if we could control the leds for example sending information ot fro the arduino but directly fron the TTN (downlink) 
+- It could alo be a good idea if we can have a interface in order too see and control the data send by the sensor. To do so, I recommend to use nodered
 
