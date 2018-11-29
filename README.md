@@ -27,7 +27,7 @@ and an IDE for Arduino so that you would be able to develop your code.
 #### Schematic
 The main goal of the project is to design a shield for the Arduino. This shield should be able to accommodate both the gas sensor and the Lora chip . 
 If you look at the figure 1, the design of the shield could be divides into 5 parts :
-On the top left, you have the gaz sesor that would o on a T05 case (http://fr.rsonline.com/web/p/photodiodes/7378098/). You then have a Led connected to a digitl pin on the arduino. For the Lora puce (RN2483), you only need to place a connectivity module in order to save space.  In addition, the impedance of the sensors could go up to 100 Megaohms. This forced us to implement an amplifier circuit as you can observe on the schemaic. Finally you have the arduino uno with all the conncetions on to top right.
+On the top left, you have the gaz sesor that would o on a T05 case (http://fr.rsonline.com/web/p/photodiodes/7378098/). You then have a Led connected to a digitl pin on the arduino. For the Lora puce (RN2483), you only need to place a connectivity module in order to save space.  In addition, the impedance of the sensors could go up to 100 Megaohms forcing us to implement an amplifier circuit as you can observe on the schemaic. Finally you have the arduino uno with all the conncetions on the top right of the image.
 
 ![The Schematic](./pictures/GasSensor_schematic.PNG)
 
@@ -37,13 +37,13 @@ On the top left, you have the gaz sesor that would o on a T05 case (http://fr.rs
 Once the schematic is done, you could go on and start with the routing. Here are some tips in order to have a good PCB :
 - Try to do all the routing on one side.
 - Minimize the lenght of the connections. A good way to do this is to have a ground plane.
-- There is minimum width on the wiring depending on your footprints and your printing machine. In my design I had a track size of 20       mil, with 24 mil isolation.
+- There is minimum width on the wiring depending on your footprints and your printing machine. In my design I had a track size of 20       mil, with 24 mil isolation.  
 
- ![The PCB](./pictures/PCB.PNG)
-                                                Fig 2 : 2-D view of the PCB 
+ ![The PCB](./pictures/PCB.PNG)  
+ 
+                                                    Fig 2 : 2-D view of the PCB 
 
                                                  
-
 ![Front of the pcb in 3D view](./pictures/Front_pcb.PNG)
 
                                                 Fig 3 : 3-D view of the PCB (front)
@@ -56,12 +56,12 @@ Once the schematic is done, you could go on and start with the routing. Here are
 
 ### Setting up the ardiono and Lora Network
 
-In this part, I will talk about how you can send any data from the arduino to a Network using Lora. For this project we used the the thing network because it is easy to set up and to use (https://www.thethingsnetwork.org/)
+In this part, I will talk about how you can send any data from the arduino to a Network using Lora. For this project we used the thing network because it is easy to set up and to use. (https://www.thethingsnetwork.org/)
 You can find the arduino code iside the Gas_sensor folder. This code has 2 objectives :
 - Receive data from the the Gas sensor and send it to the the thing network
 - Turn on the Led depending on the value of the gas sensor
 
-In order for the code to work youhave to follow the commentarygiven in the code. If you have some trouble with the lora network you cna check thethethinknetwork website in which everything is explained. (https://www.thethingsnetwork.org/docs/devices/uno/quick-start.html)
+In order for the code to work you have to follow the commentary given in the code. If you have any trouble with the lora network you can check the think network website in which everything is explained thoroughfully. (https://www.thethingsnetwork.org/docs/devices/uno/quick-start.html)
 
 ## Improvements
 ### Hardware
@@ -78,14 +78,14 @@ On the software part, a lot of things can be added :
 
 
 ## Authors
-Negatu Michael
-5th year student at Insa de Toulouse majoring in automatics and electronics
-Innovative Smart System
+Negatu Michael   
+5th year student at Insa de Toulouse majoring in automatics and electronics  
+Innovative Smart System  
 
 ## Acknowledgments
-Jean-Louis NOULLET for the design of the amplifier circuit
-Jérémie GRISOLIA and Benjamin MESTRE for the lecture in which we learned  a lot on Arduino.
-Arnauld BIGANZOLI for the KiCad lectures and initiation on Github
-Catherine CROUZET for the wielding of the shields
+Jean-Louis NOULLET for the design of the amplifier circuit.    
+Jérémie GRISOLIA and Benjamin MESTRE for the lecture in which we learned  a lot on Arduino.  
+Arnauld BIGANZOLI for the KiCad lectures and initiation on Github.  
+Catherine CROUZET for the wielding of the shields.  
 
 
