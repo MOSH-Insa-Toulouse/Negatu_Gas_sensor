@@ -17,5 +17,5 @@ You have to install Kicad for the hardware designing ( http://kicad-pcb.org/down
 ### Designing the board
 The main goal of the project is to design a shield for the Arduino. This shield should be able to accommodate both the gas sensor and the Lora chip . The gas sensor would be put on a T05 case (http://fr.rsonline.com/web/p/photodiodes/7378098/). For the Lora puce (RN2483), I decided to only place a connectivity module in order to save space.  In addition, the impedance of the sensors could go up to 100 M. This forced us to implement an amplifier circuit. 
 
-![The Schematic](./Pictures/GasSensor_schematic.PNG)
+![The Schematic](./pictures/GasSensor_schematic.PNG)
 
