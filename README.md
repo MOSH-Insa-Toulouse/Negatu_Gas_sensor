@@ -24,6 +24,7 @@ and an IDE for Arduino so that you would be able to develop your code.
 
 ## Deployment
 ### Designing the board
+#### Schematic
 The main goal of the project is to design a shield for the Arduino. This shield should be able to accommodate both the gas sensor and the Lora chip . 
 If you look at the figure 1, the design of the shield could be divides into 5 parts :
 On the top left, you have the gaz sesor that would o on a T05 case (http://fr.rsonline.com/web/p/photodiodes/7378098/). You then have a Led connected to a digitl pin on the arduino. For the Lora puce (RN2483), you only need to place a connectivity module in order to save space.  In addition, the impedance of the sensors could go up to 100 Megaohms. This forced us to implement an amplifier circuit as you can observe on the schemaic. Finally you have the arduino uno with all the conncetions on to top right.
@@ -32,11 +33,24 @@ On the top left, you have the gaz sesor that would o on a T05 case (http://fr.rs
 
                                           The Schematic of the shield
 
+### PCB
+Once the schematic is done, you could go on and start with the routing. Here are some tips in order to have a good PCB :
+- Try to do all the routing on one side.
+- Minimize the lenght of the connections. A good way to do this is to have a ground plane.
+- There is minimum width on the wiring depending on your footprints and your printing machine. In my design I had a track size of 20       mil, with 24 mil isolation.
+
 ![The PCB](./pictures/PCB.PNG)
+                                                 2-D view of the PCB
+
 
 ![Front of the pcb in 3D view](./pictures/Front_pcb.PNG)
 
+                                                3-D view of the PCB (front)
+
+
 ![Back of the pcb in 3D view](./pictures/back_pcb.PNG)
+
+                                                 3-D view of the PCB (back)
 
 
 ### Setting up the ardiono and Lora Network
