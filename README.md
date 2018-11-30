@@ -23,7 +23,7 @@ You have to install Kicad for the hardware designing ( http://kicad-pcb.org/down
 #### Schematic
 The main goal of the project is to design a shield for the Arduino. This shield should be able to accommodate both the gas sensor and the Lora chip.   
 If you look at the figure 1, the design of the shield could be divides into 5 parts :  
-On the top left, you have the gaz sensor that would be inserted into a T05 case (http://fr.rsonline.com/web/p/photodiodes/7378098/). The T05 case has normally 4 pins but I decided to keep only 2 for this project because I won't be implementing the heating resistor. The led connected to a digital pin on the arduino would turn on and off depending on the information sent by the gas sensor. For the Lora puce (RN2483), I decided to eliminate the RN2483_breakout module and place a connectivity module instead in order to save space. So you would only need wires to connect the Lora chip to the shield. In the middle on figure 1, you have an amplifier unit. This is due to the fact that the impedance of the sensors could go up to 100 Mega ohms forcing us to implement an amplifier circuit. Finally you have the arduino uno with all the connections on the top right of the image.
+On the top left, you have the gaz sensor that would be inserted into a T05 case(http://fr.rsonline.com/web/p/photodiodes/7378098/). The T05 case has normally 4 pins but I decided to keep only 2 for this project because I won't be implementing the heating resistor. The led connected to a digital pin on the arduino would turn on and off depending on the information sent by the gas sensor. For the Lora puce (RN2483), I decided to eliminate the RN2483_breakout module and place a connectivity module instead in order to save space. So you would only need wires to connect the Lora chip to the shield. In the middle on figure 1, you have an amplifier unit. This is due to the fact that the impedance of the sensors could go up to 100 Mega ohms forcing us to implement an amplifier circuit. Finally you have the arduino uno with all the connections on the top right of the image.
 
 ![The Schematic](./pictures/GasSensor_schematic.PNG)
 
@@ -34,6 +34,7 @@ Once the schematic is done, you could go on and start with the routing. Here are
 - Try to do all the routing on one side.
 - Minimize the length of the connections. A good way to do this is to have a ground plane.
 - There is minimum width on the wiring depending on your footprints and your printing machine. In my design I had a track size of 20       mil, with 24 mil isolation.  
+
 
  ![The PCB](./pictures/PCB.PNG)  
  
@@ -68,7 +69,8 @@ It would been very interseting to measure the energy consumption of the arduino,
 
 On the software part, a lot of things can be added :
 -  For instance, we only send information to the thing network (uplink). It would be great if we could receive an order from the TTN. (downlink). For example, instead of controlling the led from the arduino, we do it from the network. This way we can change the treshold easily for different applications.
-- It could also be a good idea if we can have an interface in order to display and control the data sent by the sensor. To do so, I recommend to use the nodered application. (https://moodle.insa-toulouse.fr/pluginfile.php/88340/mod_resource/content/0/Procedure_DRAGINO__TTN_NodeRed.pdf)
+- It could also be a good idea if we can have an interface in order to display and control the data sent by the sensor. To do so, I recommend to use the nodered application.  
+(https://moodle.insa-toulouse.fr/pluginfile.php/88340/mod_resource/content/0/Procedure_DRAGINO__TTN_NodeRed.pdf)
 
 ## FAQ
 
