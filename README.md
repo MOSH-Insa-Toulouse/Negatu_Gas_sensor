@@ -12,7 +12,7 @@ This is what you would need in order to do the project :
     <li>Lora chip - RN2483_breakout</li>
     <li>LED</li>
     <li>Some resistances and capacitors</li>
-    <li>Gas sensor (you can use the MQ2) with the T0-5 case http://fr.rsonline.com/web/p/photodiodes/7378098/) </li>
+    <li>Gas sensor (you can use the MQ2) with the T0-5 case (http://fr.rsonline.com/web/p/photodiodes/7378098/) </li>
 </ul>
 
 ### Installing
@@ -69,7 +69,7 @@ It would been very interseting to measure the energy consumption of the arduino,
 On the software part, a lot of things can be added :
 -  For instance, we only send information to the thing network (uplink). It would be great if we could receive an order from the TTN. (downlink). For example, instead of controlling the led from the arduino, we do it from the network. This way we can change the treshold easily for different applications.
 - It could also be a good idea if we can have an interface in order to display and control the data sent by the sensor. To do so, I recommend to use the nodered application.  
-(https://moodle.insa-toulouse.fr/pluginfile.php/88340/mod_resource/content/0/Procedure_DRAGINO__TTN_NodeRed.pdf)
+  (https://moodle.insa-toulouse.fr/pluginfile.php/88340/mod_resource/content/0/Procedure_DRAGINO__TTN_NodeRed.pdf)
 
 ## FAQ
 
