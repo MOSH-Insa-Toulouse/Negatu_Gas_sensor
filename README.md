@@ -1,11 +1,8 @@
 # Arduino Shield for Gaz sensor and LORA
-This project was realized for the Microcontrollers and Open-Source Hardware lecture
-of the Innovative Smart Systems program at INSA Toulouse. The goal of the lecture is
-to realize an electronic board that would be able to send the information gathered by a 
-sensor (gas sensor in our case) to a network (like the Lora network). 
-This project could be divided into 2 parts : 
-Hardware --> Designing the electronic card on Kicad in order to implement the gas sensor and the Lora chip. 
-Software --> Development of the code on Arduino UNO in order to send the information to the Lora network using TTN.
+This project was realized for the Microcontrollers and Open-Source Hardware lecture of the Innovative Smart Systems program at INSA Toulouse. The goal of the lecture is to realize an electronic board that would be able to send the information gathered by a sensor (gas sensor in our case) to a network (like the Lora network).   
+This project could be divided into 2 parts :   
+Hardware --> Designing the electronic card on Kicad in order to implement the gas sensor and the Lora chip.   
+Software --> Development of the code on Arduino UNO in order to send the information to the Lora network using TTN.  
 
 ## Getting Started
 ### Prerequisites
