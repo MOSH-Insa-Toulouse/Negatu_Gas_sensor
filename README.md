@@ -12,7 +12,7 @@ This is what you would need in order to do the project :
     <li>Lora chip - RN2483_breakout</li>
     <li>LED</li>
     <li>Some resistances and capacitors</li>
-    <li>Gas sensor ( you can use the MQ2) with the shield (T0-5)</li>
+    <li>Gas sensor (you can use the MQ2) with the T0-5 case http://fr.rsonline.com/web/p/photodiodes/7378098/) </li>
 </ul>
 
 ### Installing
@@ -21,9 +21,8 @@ You have to install Kicad for the hardware designing ( http://kicad-pcb.org/down
 ## Deployment
 ### Designing the board
 #### Schematic
-The main goal of the project is to design a shield for the Arduino. This shield should be able to accommodate both the gas sensor and the Lora chip.   
-If you look at the figure 1, the design of the shield could be divides into 5 parts :  
-On the top left, you have the gaz sensor that would be inserted into a T05 case. (http://fr.rsonline.com/web/p/photodiodes/7378098/) The T05 case has normally 4 pins but I decided to keep only 2 for this project because I won't be implementing the heating resistor. The led connected to a digital pin on the arduino would turn on and off depending on the information sent by the gas sensor. For the Lora puce (RN2483), I decided to eliminate the RN2483_breakout module and place a connectivity module instead in order to save space. So you would only need wires to connect the Lora chip to the shield. In the middle on figure 1, you have an amplifier unit. This is due to the fact that the impedance of the sensors could go up to 100 Mega ohms forcing us to implement an amplifier circuit. Finally you have the arduino uno with all the connections on the top right of the image.
+The main goal of the project is to design a shield for the Arduino. This shield should be able to accommodate both the gas sensor and the Lora chip. If you look at the figure 1, the design of the shield could be divides into 5 parts :  
+On the top left, you have the gaz sensor that would be inserted into a T05 case. The T05 case has normally 4 pins but I decided to keep only 2 for this project because I won't be implementing the heating resistor. The led connected to a digital pin on the arduino would turn on and off depending on the information sent by the gas sensor. For the Lora puce (RN2483), I decided to eliminate the RN2483_breakout module and place a connectivity module instead in order to save space. So you would only need wires to connect the Lora chip to the shield. In the middle on figure 1, you have an amplifier unit. This is due to the fact that the impedance of the sensors could go up to 100 Mega ohms forcing us to implement an amplifier circuit. Finally you have the arduino uno with all the connections on the top right of the image.
 
 ![The Schematic](./pictures/GasSensor_schematic.PNG)
 
